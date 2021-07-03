@@ -14,3 +14,4 @@ The material projects used :
 * Your clone the my repository in this projects.
 * Opped on Android Studio and sync projects to work.
 * Enjoyed !!
+* *These projects are licensed and copyrighted, so use them wisely and well and it is strictly forbidden to distribute or copy this project in its entirety.*
