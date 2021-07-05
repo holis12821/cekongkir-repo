@@ -17,8 +17,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-        buildConfigField("String", "BASE_URL", "\"https://api.rajaongkir.com/starter/\"")
-        buildConfigField("String", "RAJAONGKIR_API_KEY", "\"4be8d94fdda00c6c763485b4ae559334\"")
+        buildConfigField("String", "BASE_URL", "\"https://pro.rajaongkir.com/api/\"")
+        buildConfigField("String", "RAJAONGKIR_API_KEY", "\"a9ddbfa138c1cda3deeb97ea1ef126a2\"")
     }
 
     buildFeatures {
