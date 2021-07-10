@@ -8,5 +8,5 @@
  * rewriting of source code.*/
 package com.example.cekongkir.core
 
-class BaseAdapter {
+abstract class BaseAdapter {
 }
