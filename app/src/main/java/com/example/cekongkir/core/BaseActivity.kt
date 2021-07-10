@@ -8,11 +8,14 @@
  * rewriting of source code.*/
 package com.example.cekongkir.core
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import com.example.cekongkir.presentation.ui.custom.CekOngkirProgressDialog
+import com.example.cekongkir.presentation.ui.custom.CekOngkirToast
 
 /**
  * This BaseActivity class is used for activity that using view
@@ -27,6 +30,12 @@ import androidx.databinding.ViewDataBinding
  * To see documentation on my projects please visit
  * @see "https://github.com/holis12821/cekongkir-repo" on my github*/
 abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
+
+    /**
+     * This variable is used for showing Toast Positive and Error
+     * to displaying messages*/
+    private lateinit var cekOngkirToast: CekOngkirToast
+
     /**
      * This variable is use for binding the view*/
     private lateinit var binding: B
@@ -34,6 +43,8 @@ abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
      * This function is used for set the view layout*/
     @LayoutRes
     protected abstract fun getResLayoutId(): Int
+    //define progress dialog
+    private lateinit var progressDialog: CekOngkirProgressDialog
 
     /**
      *This function used for set the action
@@ -59,5 +70,35 @@ abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
             .apply {
                 lifecycleOwner = this@BaseActivity
             }
+        cekOngkirToast = CekOngkirToast(this)
+        progressDialog = CekOngkirProgressDialog(this)
+        onActivityCreated(savedInstanceState)
+    }
+
+    /**
+     * this function displaying Toast Positive Messages and Error Messages*/
+    protected fun showPositiveToast(activity: Activity, message: () -> String) {
+        cekOngkirToast.showPositiveToast(activity, message.invoke())
+    }
+
+    protected fun showToastDanger(activity: Activity, message: () -> String) {
+        cekOngkirToast.showToastDanger(activity, message.invoke())
+    }
+
+    protected fun showDialogProgress(): CekOngkirProgressDialog {
+        try {
+            progressDialog.show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return progressDialog
+    }
+
+  protected fun hideProgress() {
+        try {
+            progressDialog.dismiss()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 }

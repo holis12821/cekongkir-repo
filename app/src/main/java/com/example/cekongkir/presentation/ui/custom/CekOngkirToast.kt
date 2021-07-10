@@ -17,11 +17,10 @@ import com.example.cekongkir.R
 /**
  * This class custom the Positive Toast to display messages*/
 class CekOngkirToast(
-  context: Context,
-  private val  message: String
+  context: Context
 ) : Toast(context) {
 
-    fun showPositiveToast(activity: Activity) {
+    fun showPositiveToast(activity: Activity,  message: String) {
         val layout = activity.layoutInflater.inflate(
             R.layout.layout_custom_toast,
             activity.findViewById(R.id.toast_container)
@@ -35,6 +34,25 @@ class CekOngkirToast(
         this.apply {
             setGravity(Gravity.TOP, 0, 0)
             duration = LENGTH_SHORT
+            view = layout
+            show()
+        }
+    }
+
+    fun showToastDanger(activity: Activity, message: String) {
+        val layout = activity.layoutInflater.inflate(
+            R.layout.layout_custom_toast_danger,
+            activity.findViewById(R.id.toast_container_danger)
+        )
+
+        /** Set the text of the TextView to displaying messages*/
+        val messageToast = layout.findViewById<TextView>(R.id.toast_text_danger)
+        messageToast.text = message
+
+        //use the application extension function is common function
+        this.apply {
+            setGravity(Gravity.TOP, 0, 0)
+            duration = LENGTH_LONG
             view = layout
             show()
         }

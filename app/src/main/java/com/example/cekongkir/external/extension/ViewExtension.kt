@@ -34,19 +34,6 @@ inline var View.viewVisible: Boolean
         visibility = if (value) View.VISIBLE else View.GONE
     }
 
-/**
- * This extension is common function and implement higher ordered function*/
-inline fun Activity.showPositiveToast(activity: Activity, message: () -> String) {
- val toastMessage = CekOngkirToast(this, message.invoke())
-    toastMessage.showPositiveToast(activity)
-}
-
-inline fun Fragment.showPositiveToast(activity: Activity, message: () -> String) {
-    val toastMessage = CekOngkirToast(requireContext(), message.invoke())
-    toastMessage.showPositiveToast(activity)
-}
-
-
 fun SwipeRefreshLayout.swipeVisible() {
     isRefreshing = true
 }
