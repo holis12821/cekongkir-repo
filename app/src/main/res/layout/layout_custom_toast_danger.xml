@@ -15,7 +15,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/toast_container">
+    android:id="@+id/toast_container_danger">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/button_parent"
@@ -49,7 +49,7 @@
                 android:focusable="true">
 
                 <TextView
-                    android:id="@+id/toast_text"
+                    android:id="@+id/toast_text_danger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"

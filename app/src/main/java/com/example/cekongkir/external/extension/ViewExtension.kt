@@ -10,12 +10,12 @@ package com.example.cekongkir.external.extension
 
 import android.app.Activity
 import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.cekongkir.presentation.ui.custom.CekOngkirToast
 
 /**
  * This ViewExtension contains general extension
@@ -36,13 +36,16 @@ inline var View.viewVisible: Boolean
 
 /**
  * This extension is common function and implement higher ordered function*/
-inline fun Activity.showToast(message: () -> String) {
-    Toast.makeText(applicationContext, message.invoke(), Toast.LENGTH_SHORT).show()
+inline fun Activity.showPositiveToast(activity: Activity, message: () -> String) {
+ val toastMessage = CekOngkirToast(this, message.invoke())
+    toastMessage.showPositiveToast(activity)
 }
 
-inline fun Fragment.showToast(message: () -> String) {
-    Toast.makeText(requireContext(), message.invoke(), Toast.LENGTH_SHORT).show()
+inline fun Fragment.showPositiveToast(activity: Activity, message: () -> String) {
+    val toastMessage = CekOngkirToast(requireContext(), message.invoke())
+    toastMessage.showPositiveToast(activity)
 }
+
 
 fun SwipeRefreshLayout.swipeVisible() {
     isRefreshing = true
