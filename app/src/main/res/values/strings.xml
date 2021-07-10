@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cek Ongkir</string>
+    <string name="toast_text">Berhasil Menampilkan No Resi</string>
+    <string name="toast_text_danger">Gagal Terhubung ke Jaringan</string>
 </resources>

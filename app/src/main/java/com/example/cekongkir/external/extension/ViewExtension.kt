@@ -3,7 +3,7 @@
  * Copyright (c) 2021. All rights reserved.
  * @author Created by Nurholis on 4/7/21 01:07 AM
  * Last modified 10/7/21 16:26 AM by Nurholis
- * Licensed under the Apache Licence, Version 2.0
+ * Licensed under the Apache Licence, Version 2.0 (the "License");
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
 package com.example.cekongkir.external.extension
@@ -11,7 +11,6 @@ package com.example.cekongkir.external.extension
 import android.app.Activity
 import android.view.View
 import android.widget.Toast
-import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
