@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CekOngkir">
-        <activity android:name="com.example.cekongkir.presentation.main.ui.activity.MainActivityHome">
+        <activity android:name="com.example.cekongkir.presentation.ui.activity.home.MainActivityHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

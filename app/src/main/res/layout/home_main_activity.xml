@@ -13,7 +13,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".presentation.main.ui.activity.MainActivityHome">
+    tools:context=".presentation.ui.activity.home.MainActivityHome">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"

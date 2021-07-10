@@ -6,10 +6,10 @@
  * Licensed under the Apache Licence, Version 2.0
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
-package com.example.cekongkir.presentation.main.ui.fragment
+package com.example.cekongkir.presentation.ui.fragment.fragmentcity
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel : ViewModel() {
+class FragmentCityViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

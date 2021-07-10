@@ -6,12 +6,12 @@
  * Licensed under the Apache Licence, Version 2.0
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
-package com.example.cekongkir.presentation.main.ui.activity
+package com.example.cekongkir.presentation.ui.activity.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cekongkir.R
-import com.example.cekongkir.presentation.main.ui.fragment.MainFragment
+import com.example.cekongkir.presentation.ui.fragment.fragmentcity.FragmentCity
 
 class MainActivityHome : AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class MainActivityHome : AppCompatActivity() {
         setContentView(R.layout.home_main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
+                    .replace(R.id.container, FragmentCity.newInstance())
                     .commitNow()
         }
     }

@@ -6,7 +6,7 @@
  * Licensed under the Apache Licence, Version 2.0
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
-package com.example.cekongkir.presentation.main.ui.fragment
+package com.example.cekongkir.presentation.ui.fragment.fragmentcity
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -16,13 +16,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cekongkir.R
 
-class MainFragment : Fragment() {
+class FragmentCity : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = FragmentCity()
     }
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: FragmentCityViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -31,7 +31,7 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(FragmentCityViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
