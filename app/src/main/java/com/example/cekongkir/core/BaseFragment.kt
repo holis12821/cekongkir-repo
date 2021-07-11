@@ -8,5 +8,8 @@
  * rewriting of source code.*/
 package com.example.cekongkir.core
 
-abstract class BaseFragment {
+import androidx.fragment.app.Fragment
+
+abstract class BaseFragment: Fragment() {
+
 }
