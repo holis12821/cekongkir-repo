@@ -23,7 +23,7 @@ import com.example.cekongkir.presentation.ui.custom.CekOngkirToast
  * binding the view.
  * For extend this class we need two parameter
  * @param B for view data binding and
- * @ViewDataBinding is both parameter required and can't
+ * @param ViewDataBinding is both parameter required and can't
  * set to null. This parameter is generic constraint type parameter which
  * is used to restrict what generic types to attach.
  * This Generic type is the same of Bounded Parameter Type in Java
@@ -76,18 +76,21 @@ abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
     }
 
     /**
-     * this function displaying Toast Positive Messages and Error Messages*/
-    protected fun showPositiveToast(activity: Activity, message: () -> String) {
+     * this function displaying Toast Positive Messages*/
+    fun showPositiveToast(activity: Activity, message: () -> String) {
         if (message.invoke() == "") return
         else  cekOngkirToast.showPositiveToast(activity, message.invoke())
     }
-
-    protected fun showToastDanger(activity: Activity, message: () -> String) {
+    /**
+     * this function displaying Toast Error Messages*/
+    fun showToastDanger(activity: Activity, message: () -> String) {
        if (message.invoke() == "") return
         else  cekOngkirToast.showToastDanger(activity, message.invoke())
     }
 
-    protected fun showDialogProgress(): CekOngkirProgressDialog {
+    /**
+     * This function displaying progress loading dialog*/
+    fun showDialogProgress(): CekOngkirProgressDialog {
         try {
             progressDialog.show()
         } catch (e: Exception) {
@@ -95,8 +98,9 @@ abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
         }
         return progressDialog
     }
-
-  protected fun hideProgress() {
+    /**
+     * This function hiding progress loading dialog*/
+    fun hideProgress() {
         try {
             progressDialog.dismiss()
         } catch (e: Exception) {

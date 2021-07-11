@@ -13,10 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CekOngkir">
-        <activity android:name="com.example.cekongkir.presentation.ui.activity.home.MainActivityHome">
+        <activity android:name=".presentation.ui.activity.home.MainActivityHome"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".presentation.ui.activity.splashscreen.SplashScreenActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
