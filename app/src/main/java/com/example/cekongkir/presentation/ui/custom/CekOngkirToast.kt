@@ -34,6 +34,7 @@ class CekOngkirToast(
         this.apply {
             setGravity(Gravity.TOP, 0, 0)
             duration = LENGTH_SHORT
+            @Suppress("DEPRECATION")
             view = layout
             show()
         }
@@ -53,6 +54,7 @@ class CekOngkirToast(
         this.apply {
             setGravity(Gravity.TOP, 0, 0)
             duration = LENGTH_LONG
+            @Suppress("DEPRECATION")
             view = layout
             show()
         }

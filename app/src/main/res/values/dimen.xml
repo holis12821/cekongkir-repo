@@ -17,11 +17,14 @@
     <dimen name="space_xxsmall">6dp</dimen>
     <dimen name="space_small">8dp</dimen>
     <dimen name="space_medium">10dp</dimen>
+    <dimen name="space_xmedium">12dp</dimen>
     <dimen name="space_semi_medium">14dp</dimen>
+    <dimen name="space_medium_large">16dp</dimen>
     <dimen name="space_semi_large">17dp</dimen>
     <dimen name="space_semi_xlarge">20dp</dimen>
     <dimen name="space_super_large">24dp</dimen>
     <dimen name="space_big_medium">45dp</dimen>
+    <dimen name="space_big_semi_medium">56dp</dimen>
     <dimen name="space_big_xlarge">60dp</dimen>
 
     <!-- Typography Text-->

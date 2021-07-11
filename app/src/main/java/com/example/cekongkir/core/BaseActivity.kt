@@ -78,11 +78,13 @@ abstract class BaseActivity<B : ViewDataBinding>: AppCompatActivity() {
     /**
      * this function displaying Toast Positive Messages and Error Messages*/
     protected fun showPositiveToast(activity: Activity, message: () -> String) {
-        cekOngkirToast.showPositiveToast(activity, message.invoke())
+        if (message.invoke() == "") return
+        else  cekOngkirToast.showPositiveToast(activity, message.invoke())
     }
 
     protected fun showToastDanger(activity: Activity, message: () -> String) {
-        cekOngkirToast.showToastDanger(activity, message.invoke())
+       if (message.invoke() == "") return
+        else  cekOngkirToast.showToastDanger(activity, message.invoke())
     }
 
     protected fun showDialogProgress(): CekOngkirProgressDialog {
