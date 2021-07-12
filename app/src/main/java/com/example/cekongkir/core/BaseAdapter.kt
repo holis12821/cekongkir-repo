@@ -23,8 +23,8 @@ import androidx.recyclerview.widget.RecyclerView
  * @param H for RecyclerView ViewHolder.
  * The params a Bounded Parameters Type in Java
  * or Constraint Type Parameter in Kotlin.
- * @param ViewDataBinding is both parameter
- * @param RecyclerView.ViewHolder
+ * @see ViewDataBinding is both parameter which is the constraint type parameter and
+ * @see RecyclerView.ViewHolder is the 4th parameter also constraint type parameter.
  * all parameters is required and can't set a null.
  * If the set the null maybe NullPointerException will haunt you.
  * The generic parameters will be given or attached an instance of

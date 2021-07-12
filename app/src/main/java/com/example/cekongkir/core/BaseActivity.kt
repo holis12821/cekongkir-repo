@@ -23,7 +23,7 @@ import com.example.cekongkir.presentation.ui.custom.CekOngkirToast
  * binding the view.
  * For extend this class we need two parameter
  * @param B for view data binding and
- * @param ViewDataBinding is both parameter required and can't
+ * @see ViewDataBinding is both parameter required and can't
  * set to null. This parameter is generic constraint type parameter which
  * is used to restrict what generic types to attach.
  * This Generic type is the same of Bounded Parameter Type in Java
