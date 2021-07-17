@@ -9,6 +9,7 @@
 package com.example.cekongkir.external.extension
 
 import android.app.Activity
+import android.content.Context
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -33,6 +34,10 @@ inline var View.viewVisible: Boolean
     set(value) {
         visibility = if (value) View.VISIBLE else View.GONE
     }
+
+fun convertDpToPixels(context: Context, dp: Int): Int = (dp * context.resources.displayMetrics.density).toInt()
+
+fun convertPixelsToDp(context: Context, px: Int) = (px / context.resources.displayMetrics.density).toInt()
 
 fun SwipeRefreshLayout.swipeVisible() {
     isRefreshing = true

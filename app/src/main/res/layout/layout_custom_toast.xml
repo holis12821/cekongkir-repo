@@ -55,7 +55,7 @@
                     android:background="@color/blue_secondary_variants_700"
                     app:layout_constraintLeft_toLeftOf="parent"/>
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/toast_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

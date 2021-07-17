@@ -2,33 +2,33 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/space_big_semi_medium"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:id="@+id/nav_bar">
+    android:orientation="vertical">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/navigation_back"
         android:layout_width="@dimen/space_super_large"
         android:layout_height="@dimen/space_super_large"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/ic_baseline_arrow_back_ios_24"
         android:clickable="true"
         android:focusable="true"
         android:layout_marginTop="@dimen/space_semi_medium"
         android:layout_marginStart="@dimen/space_medium_large"
+        tools:src="@drawable/ic_baseline_arrow_back_ios_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/navigation_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/navigation_title"
         android:layout_marginStart="@dimen/space_xmedium"
         android:fontFamily="@font/popup"
         android:textSize="@dimen/text_medium"
+        tools:text="@string/navigation_title"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/navigation_back"
         app:layout_constraintBottom_toBottomOf="parent"/>

@@ -64,7 +64,8 @@ abstract class BaseFragment<B : ViewDataBinding>: Fragment() {
      *  @LifeCycleOwner is an interface that shows that this class
      * has a lifecycle such as an activity or a fragment.
      * so the activity or fragment implements a
-     * @LifeCycleOwner, then the activity and fragment have properties that*/
+     * @LifeCycleOwner, then the activity and fragment have properties that
+     * are owned by the interface, so they have a lifecycle.*/
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = DataBindingUtil.inflate<B>(inflater,
                 getResLayoutId(), container, false)

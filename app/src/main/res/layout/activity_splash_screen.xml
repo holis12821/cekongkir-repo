@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         tools:context=".presentation.ui.activity.splashscreen.SplashScreenActivity">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_splash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

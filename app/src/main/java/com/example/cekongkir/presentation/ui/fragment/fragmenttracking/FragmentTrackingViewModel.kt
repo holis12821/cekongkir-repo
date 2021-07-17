@@ -8,5 +8,7 @@
  * rewriting of source code.*/
 package com.example.cekongkir.presentation.ui.fragment.fragmenttracking
 
-class FragmentTrackingViewModel {
+import com.example.cekongkir.core.BaseViewModel
+
+class FragmentTrackingViewModel : BaseViewModel() {
 }
