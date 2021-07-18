@@ -2,9 +2,12 @@
   <dictionary name="Nurholis">
     <words>
       <w>geeksforgeeks</w>
+      <w>gson</w>
+      <w>koin</w>
       <w>multidex</w>
       <w>nurholis</w>
       <w>ongkir</w>
+      <w>viewmodel</w>
     </words>
   </dictionary>
 </component>

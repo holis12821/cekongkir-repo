@@ -33,4 +33,11 @@
         app:layout_constraintStart_toEndOf="@+id/navigation_back"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

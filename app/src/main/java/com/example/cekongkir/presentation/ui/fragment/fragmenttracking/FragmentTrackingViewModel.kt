@@ -8,7 +8,7 @@
  * rewriting of source code.*/
 package com.example.cekongkir.presentation.ui.fragment.fragmenttracking
 
-import com.example.cekongkir.core.BaseViewModel
+import androidx.lifecycle.ViewModel
 
-class FragmentTrackingViewModel : BaseViewModel() {
+class FragmentTrackingViewModel : ViewModel() {
 }

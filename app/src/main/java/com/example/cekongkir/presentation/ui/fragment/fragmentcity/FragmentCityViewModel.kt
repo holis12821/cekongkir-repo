@@ -9,8 +9,8 @@
 package com.example.cekongkir.presentation.ui.fragment.fragmentcity
 
 import androidx.lifecycle.ViewModel
-import com.example.cekongkir.core.BaseViewModel
 
-class FragmentCityViewModel : BaseViewModel() {
+class FragmentCityViewModel : ViewModel() {
+
     // TODO: Implement the ViewModel
 }
