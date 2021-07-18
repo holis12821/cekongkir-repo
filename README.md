@@ -5,10 +5,12 @@ The material projects used :
 * *Clean Architecture* : this project already implement Clean Architecture. 
 * MVVM Design Pattern which pattern has become a standart from google.
 * Room Persistance with local storage manager.
-* Navigation Component 
+* Navigation Component. 
 * Coroutine Flow with kotlin Coroutine.
+* Koin Dependency Injection.
 * Shared Preference as session.
 * Repository Pattern.
+* Timber for Logs.
 
 ### How to use this apps ? 
 * Your clone the my repository in this projects.
