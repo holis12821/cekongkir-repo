@@ -39,22 +39,22 @@ android {
             dimension "default"
             resValue "string", "app_name", "Delivery - Main"
             applicationIdSuffix ".main"
-            buildConfigField("String", "BASE_URL", "\"https://pro.rajaongkir.com/api/\"")
-            buildConfigField("String", "RAJAONGKIR_API_KEY", "\"a9ddbfa138c1cda3deeb97ea1ef126a2\"")
+            buildConfigField 'String', 'BASE_URL', '"https://pro.rajaongkir.com"'
+            buildConfigField 'String', 'RAJAONGKIR_API_KEY', '"a9ddbfa138c1cda3deeb97ea1ef126a2"'
         }
 
         staging {
             dimension "default"
             resValue "string", "app_name", "Delivevry - Staging"
             applicationIdSuffix ".staging"
-            buildConfigField("String", "BASE_URL", "\"https://pro.rajaongkir.com/api/\"")
-            buildConfigField("String", "RAJAONGKIR_API_KEY", "\"a9ddbfa138c1cda3deeb97ea1ef126a2\"")
+            buildConfigField 'String', 'BASE_URL', '"https://pro.rajaongkir.com"'
+            buildConfigField 'String', 'RAJAONGKIR_API_KEY', '"a9ddbfa138c1cda3deeb97ea1ef126a2"'
         }
         production {
             dimension "default"
             resValue "string", "app_name", "Delivery"
-            buildConfigField("String", "BASE_URL", "\"https://pro.rajaongkir.com/api/\"")
-            buildConfigField("String", "RAJAONGKIR_API_KEY", "\"a9ddbfa138c1cda3deeb97ea1ef126a2\"")
+            buildConfigField 'String', 'BASE_URL', '"https://pro.rajaongkir.com"'
+            buildConfigField 'String', 'RAJAONGKIR_API_KEY', '"a9ddbfa138c1cda3deeb97ea1ef126a2"'
         }
     }
 
