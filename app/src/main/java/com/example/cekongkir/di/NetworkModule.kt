@@ -1,3 +1,11 @@
+/**
+ * Cek Ongkir Android Apps
+ * Copyright (c) 2021. All rights reserved.
+ * @author Created by Nurholis on 18/7/21 04:07 AM
+ * Last modified 19/7/21 08:44 AM by Nurholis.
+ * Licensed under the Apache Licence, Version 2.0 (the "License");
+ * May not copy files in their entirety for either distribution or
+ * rewriting of source code.*/
 package com.example.cekongkir.di
 
 import com.example.cekongkir.external.constant.networkConnectTimeOut
@@ -15,7 +23,8 @@ val networkModule = module {
     single { provideOkHttpClient(get()) }
     single { provideConverterFactory() }
     single {
-
+        val baseUrl = BuildConfig.BASE_URL
+        provideRetrofitInstance(get(), get(), baseUrl)
     }
 }
 
