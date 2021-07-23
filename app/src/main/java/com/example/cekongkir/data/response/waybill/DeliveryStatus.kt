@@ -6,11 +6,17 @@
  * Licensed under the Apache Licence, Version 2.0 (the "License");
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
-package com.example.cekongkir.data.response.subdistrict
+package com.example.cekongkir.data.response.waybill
 
 import com.google.gson.annotations.SerializedName
 
-data class Query(
-    @SerializedName("city")
-    var city: String? = null
+data class DeliveryStatus(
+    @SerializedName("pod_date")
+    var pod_date: String? = null,
+    @SerializedName("pod_receiver")
+    var pod_receiver: String? = null,
+    @SerializedName("pod_time")
+    var pod_time: String? = null,
+    @SerializedName("status")
+    var status: String? = null
 )
