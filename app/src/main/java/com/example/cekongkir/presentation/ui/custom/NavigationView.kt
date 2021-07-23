@@ -2,7 +2,7 @@
  * Cek Ongkir Android Apps
  * Copyright (c) 2021. All rights reserved.
  * Created by Nurholis on 13/7/21 21:03 PM
- * Last modified 18/7/21 03:03 AM by Nurholis
+ * Last modified 13/7/21 21:03 PM by Nurholis
  * Licensed under the Apache Licence, Version 2.0 (the "License");
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.*/
