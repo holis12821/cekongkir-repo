@@ -10,7 +10,12 @@ package com.example.cekongkir.data.response.city
 
 import com.example.cekongkir.data.response.Status
 import com.google.gson.annotations.SerializedName
-
+/**
+ * @param query is response query for example, if you want to
+ * parameterize the api endpoint which's usually used
+ * to filter data or sort data.
+ * @param results is response to handle data,
+ * @param status is response status code from api*/
 data class CityRajaOngkir(
     @SerializedName("query")
     var query: List<Any>? = null,
