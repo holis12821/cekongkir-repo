@@ -15,24 +15,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.cekongkir.R
+import com.example.cekongkir.core.BaseFragment
+import com.example.cekongkir.databinding.MainFragmentBinding
 
-class FragmentCity : Fragment() {
+class FragmentCity : BaseFragment<MainFragmentBinding>() {
+    override fun getResLayoutId(): Int = R.layout.main_fragment
 
-    companion object {
-        fun newInstance() = FragmentCity()
-    }
+    override fun onViewCreated() {
 
-    private lateinit var viewModel: FragmentCityViewModel
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(FragmentCityViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }
