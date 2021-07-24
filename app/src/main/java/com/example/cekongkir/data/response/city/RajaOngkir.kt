@@ -17,10 +17,10 @@ import com.google.gson.annotations.SerializedName
  * @param results is response to handle data,
  * @param status is response status code from api*/
 data class RajaOngkir(
-        @SerializedName("query")
+    @SerializedName("query")
     var query: List<Any>? = null,
-        @SerializedName("results")
+    @SerializedName("results")
     var results: List<Results>? = null,
-        @SerializedName("status")
+    @SerializedName("status")
     var status: Status? = null
 )
