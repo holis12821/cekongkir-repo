@@ -3,11 +3,32 @@
  * Cek Ongkir Android Apps
  * Copyright (c) 2021. All rights reserved.
  * Created by Nurholis on 4/7/21 01:07 AM
- * Last modified 10/7/21 02:37 AM by Nurholis
+ * Last modified 25/7/21 19:48 PM by Nurholis
  * Licensed under the Apache Licence, Version 2.0
  * May not copy files in their entirety for either distribution or
  * rewriting of source code.-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_tracking">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/waybill_navigation"
+    app:startDestination="@id/trackingFragment">
+
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.example.cekongkir.presentation.ui.fragment.fragmenttracking.FragmentTracking"
+        android:label="fragment_waybill"
+        tools:layout="@layout/tracking_fragment">
+        <action
+            android:id="@+id/action_trackingFragment_to_trackingResultFragment"
+            app:destination="@+id/trackingResultFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackingResultFragment"
+        android:name="com.example.cekongkir.presentation.ui.fragment.fragmenttrackingresult.FragmentTrackingResult"
+        android:label="fragment_waybill_detail"
+        tools:layout="@layout/tracking_result_fragment">
+
+    </fragment>
 
 </navigation>

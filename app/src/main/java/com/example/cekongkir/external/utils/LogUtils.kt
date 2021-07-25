@@ -8,8 +8,8 @@
  * rewriting of source code.*/
 package com.example.cekongkir.external.utils
 
-import android.util.Log
-import androidx.multidex.BuildConfig
+
+import com.example.cekongkir.BuildConfig
 import timber.log.Timber
 
 object LogUtils {

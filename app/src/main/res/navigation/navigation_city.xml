@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+ /**
  * Cek Ongkir Android Apps
  * Copyright (c) 2021. All rights reserved.
- * Created by Nurholis on 4/7/21 01:07 AM
- * Last modified 10/7/21 02:37 AM by Nurholis
- * Licensed under the Apache Licence, Version 2.0
+ * @author Created by Nurholis on 25/7/21 18:33 PM
+ * Last modified 25/7/21 19:06 PM by Nurholis
+ * Licensed under the Apache Licence, Version 2.0 (the "License");
  * May not copy files in their entirety for either distribution or
- * rewriting of source code.-->
+ * rewriting of source code.*/-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_city">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_city"
+    app:startDestination="@id/cityFragment">
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.example.cekongkir.presentation.ui.fragment.fragmentcity.FragmentCity"
+        android:label="fragment_city"
+        tools:layout="@layout/city_fragment">
+        <action
+            android:id="@+id/action_cityFragment_to_subdistrictFragment"
+            app:destination="@+id/subdistrictFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/subdistrictFragment"
+        android:name="com.example.cekongkir.presentation.ui.fragment.fragmentsubdistrict.FragmentSubdistrict"
+        android:label="fragment_subdistrict"
+        tools:layout="@layout/subdistrict_fragment">
+    </fragment>
 
 </navigation>
