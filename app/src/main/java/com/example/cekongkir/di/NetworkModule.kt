@@ -43,6 +43,11 @@ fun provideOkHttpClient(
         .writeTimeout(networkWriteTimeout, TimeUnit.SECONDS)
         .readTimeout(networkReadTimeOut, TimeUnit.SECONDS)
         .addInterceptor(loggingInterceptor)
+        .addInterceptor {
+            val request = it.request().newBuilder()
+                .addHeader("key", BuildConfig.RAJAONGKIR_API_KEY).build()
+            it.proceed(request)
+        }
         .build()
 }
 

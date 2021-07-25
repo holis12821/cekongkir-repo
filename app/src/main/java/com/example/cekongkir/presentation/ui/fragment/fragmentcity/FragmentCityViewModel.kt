@@ -9,8 +9,10 @@
 package com.example.cekongkir.presentation.ui.fragment.fragmentcity
 
 import androidx.lifecycle.ViewModel
+import com.example.cekongkir.domain.usecase.UseCaseCekOngkir
 
-class FragmentCityViewModel : ViewModel() {
-
+class FragmentCityViewModel(
+    private val useCaseCekOngkir: UseCaseCekOngkir
+): ViewModel() {
     // TODO: Implement the ViewModel
 }
